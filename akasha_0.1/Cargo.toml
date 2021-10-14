@@ -1,0 +1,16 @@
+[package]
+authors = ["dxps <marius.ileana@gmail.com"]
+edition = "2018"
+name = "akasha"
+version = "0.1.0"
+
+[lib]
+name = "akasha"
+path = "src/lib.rs"
+
+[[bin]]
+name = "akasha_node"
+path = "src/bin/node.rs"
+
+[dependencies]
+hex = "0.4"
