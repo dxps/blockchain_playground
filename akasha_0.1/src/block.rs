@@ -1,5 +1,7 @@
 use std::fmt::{Debug, Formatter};
 
+use crate::{hashable::Hashable, u128_bytes, u32_bytes, u64_bytes};
+
 /// The hash of a block is a type alias to `Vec<u8>`.
 type BlockHash = Vec<u8>;
 
@@ -47,5 +49,17 @@ impl Block {
             nonce,
             payload,
         }
+    }
+}
+
+impl Hashable for Block {
+    fn bytes(&self) -> Vec<u8> {
+        let mut bytes = vec![];
+        bytes.extend(&u32_bytes(&self.index));
+        bytes.extend(&u128_bytes(&self.timestamp));
+        bytes.extend(&self.prev_block_hash);
+        bytes.extend(&u64_bytes(&self.nonce));
+        bytes.extend(self.payload.as_bytes());
+        bytes
     }
 }

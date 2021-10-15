@@ -13,4 +13,5 @@ name = "akasha_node"
 path = "src/bin/node.rs"
 
 [dependencies]
+crypto-hash = "0.3"
 hex = "0.4"
