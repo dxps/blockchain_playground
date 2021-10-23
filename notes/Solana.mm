@@ -106,7 +106,7 @@
 <node TEXT="is Solana&apos;s Ethereum ERC-20 equivalent." ID="ID_299087681" CREATED="1635014114729" MODIFIED="1635014133178"/>
 <node TEXT="allows interacting with tokens, including NFTs." ID="ID_1056572504" CREATED="1635014141228" MODIFIED="1635014165370"/>
 <node TEXT="allows minting, transferring, burning or querying tokens." ID="ID_491171440" CREATED="1635014185054" MODIFIED="1635014220358"/>
-<node TEXT="sample using it: spl-token-wallet" ID="ID_1009649532" CREATED="1635014284306" MODIFIED="1635014326501" LINK="https://github.com/project-serum/spl-token-wallet">
+<node TEXT="sample using it: spl-token-wallet" FOLDED="true" ID="ID_1009649532" CREATED="1635014284306" MODIFIED="1635014326501" LINK="https://github.com/project-serum/spl-token-wallet">
 <node TEXT="is a React wallet app" ID="ID_473649222" CREATED="1635014349995" MODIFIED="1635014360514"/>
 <node TEXT="uses solana-web3.js SDK" ID="ID_586998733" CREATED="1635014360900" MODIFIED="1635014450381" LINK="https://github.com/solana-labs/solana-web3.js"/>
 <node TEXT="uses the Token program (using Token Program JS Bindings)&#xa;for creating token accounts and transferring tokens." ID="ID_494145758" CREATED="1635014401068" MODIFIED="1635014466273" LINK="https://github.com/solana-labs/solana-program-library/blob/master/token/js/client/token.js"/>
