@@ -1,6 +1,6 @@
 <map version="freeplane 1.9.8">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node TEXT="Solana" FOLDED="false" ID="ID_1090958577" CREATED="1606664858024" MODIFIED="1635012929804" VGAP_QUANTITY="3 pt">
+<node TEXT="Solana" FOLDED="false" ID="ID_1090958577" CREATED="1606664858024" MODIFIED="1635186938364" VGAP_QUANTITY="3 pt">
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <hook NAME="MapStyle" background="#3c3836">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" associatedTemplateLocation="template:/dark_gruvbox_template.mm" fit_to_viewport="false"/>
@@ -115,11 +115,20 @@
 </node>
 </node>
 </node>
-<node TEXT="SOL token" POSITION="right" ID="ID_349727205" CREATED="1635096840970" MODIFIED="1635096866843">
+<node TEXT="Tokens" POSITION="right" ID="ID_953108356" CREATED="1635186881314" MODIFIED="1635186883756">
+<node TEXT="SOL&#xa;(native token)" ID="ID_349727205" CREATED="1635096840970" MODIFIED="1635186914884">
 <node TEXT="used for" ID="ID_179861588" CREATED="1635096869157" MODIFIED="1635096875237">
 <node TEXT="paying the transaction fees in the network." ID="ID_1534405184" CREATED="1635096876404" MODIFIED="1635096917788"/>
 <node TEXT="rewarding participant in the Proof of Stake consensus." ID="ID_1237015983" CREATED="1635096892393" MODIFIED="1635096914152"/>
 </node>
+</node>
+<node TEXT="SPL Token" ID="ID_1955045607" CREATED="1635186916491" MODIFIED="1635186922195"/>
+</node>
+<node TEXT="Networks" POSITION="right" ID="ID_547896157" CREATED="1635186927559" MODIFIED="1635186938362" VSHIFT_QUANTITY="24.75 pt">
+<node TEXT="3 networks are maintained,&#xa;each having its own purpose." ID="ID_1036117833" CREATED="1635186983665" MODIFIED="1635187022889"/>
+<node TEXT="Mainnet Beta" ID="ID_500869456" CREATED="1635186941499" MODIFIED="1635186955696"/>
+<node TEXT="Testnet" ID="ID_1501132577" CREATED="1635187150128" MODIFIED="1635187153293"/>
+<node TEXT="Devnet" ID="ID_1525785066" CREATED="1635187153689" MODIFIED="1635187156169"/>
 </node>
 </node>
 </map>
