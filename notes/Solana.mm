@@ -1,6 +1,6 @@
 <map version="freeplane 1.9.8">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node TEXT="Solana" FOLDED="false" ID="ID_1090958577" CREATED="1606664858024" MODIFIED="1635186938364" VGAP_QUANTITY="3 pt">
+<node TEXT="Solana" FOLDED="false" ID="ID_1090958577" CREATED="1606664858024" MODIFIED="1635782050667" VGAP_QUANTITY="3 pt">
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <hook NAME="MapStyle" background="#3c3836">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" associatedTemplateLocation="template:/dark_gruvbox_template.mm" fit_to_viewport="false"/>
@@ -11,7 +11,7 @@
 <stylenode LOCALIZED_TEXT="styles.predefined" POSITION="right" STYLE="bubble">
 <font NAME="Hasklig"/>
 <stylenode LOCALIZED_TEXT="default" ID="ID_602083445" ICON_SIZE="12 pt" FORMAT_AS_HYPERLINK="false" COLOR="#3c3836" BACKGROUND_COLOR="#fbf1c7" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="8 pt" SHAPE_VERTICAL_MARGIN="5 pt" NUMBERED="false" FORMAT="STANDARD_FORMAT" TEXT_ALIGN="DEFAULT" BORDER_WIDTH_LIKE_EDGE="false" BORDER_WIDTH="1.9 px" BORDER_COLOR_LIKE_EDGE="true" BORDER_COLOR="#f0f0f0" BORDER_DASH_LIKE_EDGE="true" BORDER_DASH="SOLID" VGAP_QUANTITY="3 pt" MAX_WIDTH="10 cm" MIN_WIDTH="0 cm">
-<arrowlink SHAPE="CUBIC_CURVE" COLOR="#a89984" WIDTH="2" TRANSPARENCY="255" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_602083445" STARTINCLINATION="102.75 pt;-18 pt;" ENDINCLINATION="102.75 pt;3 pt;" STARTARROW="DEFAULT" ENDARROW="NONE"/>
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#a89984" WIDTH="2" TRANSPARENCY="255" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_602083445" STARTINCLINATION="102.75 pt;-17.25 pt;" ENDINCLINATION="102.75 pt;3 pt;" STARTARROW="DEFAULT" ENDARROW="NONE"/>
 <font NAME="Hasklig" SIZE="11" BOLD="false" STRIKETHROUGH="false" ITALIC="false"/>
 <edge STYLE="bezier" COLOR="#93a1a1" WIDTH="3" DASH="SOLID"/>
 <richcontent CONTENT-TYPE="plain/auto" TYPE="DETAILS"/>
@@ -96,17 +96,17 @@
 </node>
 <node TEXT="Programs&#xa;(SmartContract)" POSITION="right" ID="ID_1962513767" CREATED="1635013681430" MODIFIED="1635096857696">
 <node TEXT="there are two sets" ID="ID_273927373" CREATED="1635013707877" MODIFIED="1635013925219" VGAP_QUANTITY="3 pt">
-<node TEXT="Native Programs" ID="ID_133127595" CREATED="1635013904343" MODIFIED="1635013925219" HGAP_QUANTITY="13.25 pt" VSHIFT_QUANTITY="-8.25 pt">
+<node TEXT="Native Programs" FOLDED="true" ID="ID_133127595" CREATED="1635013904343" MODIFIED="1635013925219" HGAP_QUANTITY="13.25 pt" VSHIFT_QUANTITY="-8.25 pt">
 <node TEXT="are the core of Solana." ID="ID_1274839205" CREATED="1635013725327" MODIFIED="1635013883209"/>
 <node TEXT="one of the most common ones is System program&#xa;(used for creating accounts, transferring SOL, and others)." ID="ID_149392146" CREATED="1635013785271" MODIFIED="1635013891848"/>
 <node TEXT="other popular ones: Staking and Voting." ID="ID_1364816182" CREATED="1635013942937" MODIFIED="1635013979844"/>
 </node>
-<node TEXT="Solana Program Library (SPL)" ID="ID_375973769" CREATED="1635013730333" MODIFIED="1635013756272">
+<node TEXT="Solana Program Library (SPL)" FOLDED="true" ID="ID_375973769" CREATED="1635013730333" MODIFIED="1635013756272">
 <node TEXT="Token program is the most popular included)" ID="ID_302625142" CREATED="1635014000690" MODIFIED="1635014113241">
 <node TEXT="is Solana&apos;s Ethereum ERC-20 equivalent." ID="ID_299087681" CREATED="1635014114729" MODIFIED="1635014133178"/>
 <node TEXT="allows interacting with tokens, including NFTs." ID="ID_1056572504" CREATED="1635014141228" MODIFIED="1635014165370"/>
 <node TEXT="allows minting, transferring, burning or querying tokens." ID="ID_491171440" CREATED="1635014185054" MODIFIED="1635014220358"/>
-<node TEXT="sample using it: spl-token-wallet" FOLDED="true" ID="ID_1009649532" CREATED="1635014284306" MODIFIED="1635014326501" LINK="https://github.com/project-serum/spl-token-wallet">
+<node TEXT="sample using it: spl-token-wallet" ID="ID_1009649532" CREATED="1635014284306" MODIFIED="1635014326501" LINK="https://github.com/project-serum/spl-token-wallet">
 <node TEXT="is a React wallet app" ID="ID_473649222" CREATED="1635014349995" MODIFIED="1635014360514"/>
 <node TEXT="uses solana-web3.js SDK" ID="ID_586998733" CREATED="1635014360900" MODIFIED="1635014450381" LINK="https://github.com/solana-labs/solana-web3.js"/>
 <node TEXT="uses the Token program (using Token Program JS Bindings)&#xa;for creating token accounts and transferring tokens." ID="ID_494145758" CREATED="1635014401068" MODIFIED="1635014466273" LINK="https://github.com/solana-labs/solana-program-library/blob/master/token/js/client/token.js"/>
@@ -114,9 +114,15 @@
 </node>
 </node>
 </node>
+<node TEXT="are stateless" ID="ID_1873041822" CREATED="1635782009631" MODIFIED="1635782018636">
+<node TEXT="use Accounts to store state." ID="ID_672563853" CREATED="1635782023390" MODIFIED="1635782034485"/>
+<node TEXT="Programs themselves are stored in Accounts&#xa;which are marked as executable." ID="ID_575301425" CREATED="1635782112174" MODIFIED="1635782140288">
+<node TEXT="executable accounts are owned by BPF Loader." ID="ID_1291146912" CREATED="1635782866122" MODIFIED="1635782879175"/>
 </node>
-<node TEXT="Tokens" POSITION="right" ID="ID_953108356" CREATED="1635186881314" MODIFIED="1635186883756">
-<node TEXT="SOL&#xa;(native token)" ID="ID_349727205" CREATED="1635096840970" MODIFIED="1635186914884">
+</node>
+</node>
+<node TEXT="Tokens" POSITION="right" ID="ID_953108356" CREATED="1635186881314" MODIFIED="1635782046084" HGAP_QUANTITY="15.5 pt" VSHIFT_QUANTITY="21 pt">
+<node TEXT="SOL (the native token)" ID="ID_349727205" CREATED="1635096840970" MODIFIED="1635782179960">
 <node TEXT="used for" ID="ID_179861588" CREATED="1635096869157" MODIFIED="1635096875237">
 <node TEXT="paying the transaction fees in the network." ID="ID_1534405184" CREATED="1635096876404" MODIFIED="1635096917788"/>
 <node TEXT="rewarding participant in the Proof of Stake consensus." ID="ID_1237015983" CREATED="1635096892393" MODIFIED="1635096914152"/>
@@ -124,8 +130,8 @@
 </node>
 <node TEXT="SPL Token" ID="ID_1955045607" CREATED="1635186916491" MODIFIED="1635186922195"/>
 </node>
-<node TEXT="Networks" POSITION="right" ID="ID_547896157" CREATED="1635186927559" MODIFIED="1635186938362" VSHIFT_QUANTITY="24.75 pt">
-<node TEXT="3 networks are maintained,&#xa;each having its own purpose." ID="ID_1036117833" CREATED="1635186983665" MODIFIED="1635187022889"/>
+<node TEXT="Networks" POSITION="right" ID="ID_547896157" CREATED="1635186927559" MODIFIED="1635782050666" HGAP_QUANTITY="14.75 pt" VSHIFT_QUANTITY="31.5 pt">
+<node TEXT="3 networks are maintained, each having its own purpose." ID="ID_1036117833" CREATED="1635186983665" MODIFIED="1635782059086"/>
 <node TEXT="Mainnet Beta" ID="ID_500869456" CREATED="1635186941499" MODIFIED="1635186955696"/>
 <node TEXT="Testnet" ID="ID_1501132577" CREATED="1635187150128" MODIFIED="1635187153293"/>
 <node TEXT="Devnet" ID="ID_1525785066" CREATED="1635187153689" MODIFIED="1635187156169"/>
